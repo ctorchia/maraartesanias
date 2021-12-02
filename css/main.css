@@ -29,7 +29,6 @@ nav{
     justify-content: space-between;
     position: sticky;
     top: 0px;
-    /* width: 100%; */
     background-color: white;
     border: solid 1px rgb(240, 239, 239);
     grid-area: nav;  
