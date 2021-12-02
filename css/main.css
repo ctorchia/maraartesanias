@@ -12,7 +12,6 @@ html{
 }
 
 .grid-container{
-    /* width: 99vw; */
     display: grid;
     grid-template-areas: 
     "nav nav nav nav"
