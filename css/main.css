@@ -1,0 +1,428 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;700;900&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+.grid-container{
+    /* width: 99vw; */
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main aside"
+    "footer footer footer footer"
+    ;
+}
+
+/* --------------- NAV ------------------------------ */
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    /* width: 100%; */
+    background-color: white;
+    border: solid 1px rgb(240, 239, 239);
+    grid-area: nav;  
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:active{
+    transform: scale(0.9);
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    margin: 5px;
+    padding: 3px;
+    color: black;
+    border: solid 1px black;
+    background-color: #E2ECE9;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    color: #1d98b4;
+}
+
+.opcion-seleccionada{
+    background-color: #BEE1E6;
+}
+
+/* ------------------ ASIDE -------------------------- */
+
+aside{
+    grid-area: aside;
+}
+
+.costado .tarjeta{
+    width: 100%;
+}
+
+/* ------------------ MAIN --------------------------- */
+
+h1 {
+    color: #398793;
+    margin: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'EB Garamond', serif;
+
+    animation-name: entrada;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes entrada {
+    0%{
+        transform: translateX(-100vw);
+    }
+
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+.imagen-principal{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imagen-principal img{
+    border-radius: 10px;
+}
+
+.texto-principal {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-principal p{
+    width: 50%;
+    margin: 10px 30px 30px 30px;
+}
+
+form {
+    font-size: 2rem;
+}
+
+main{
+    grid-area: main;
+}
+
+.bloque-imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+
+.bloque-imagenes a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    width: 30%;
+}
+
+.bloque-imagenes a .tarjeta{
+    width: 100%;
+}
+
+.tarjeta {
+    border: solid 2px rgb(239, 240, 240);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;   /* */
+    transition: all .5s ease;
+}
+
+.tarjeta:hover{
+    background-color: #E2ECE9;    
+}
+
+.tarjeta img{
+    border-radius: 10px;
+    margin: 10px;
+    width: 80%;   /**/
+}
+
+.tarjeta p {
+    margin: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.formulario-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.contactanos{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.formulario div{
+    display: block;
+    width: 100%;
+    margin: 10px;
+}
+
+.formulario div label{
+    width: 100%;
+}
+
+.formulario div input{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.formulario div textarea{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.contacto-botones input{
+    width: 20%    !important;
+}
+
+.contacto-botones input:active{
+    transform: scale(0.9);
+}
+
+.descripcion-general{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.texto-general{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;  
+}
+
+.texto-general p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.imagen-general{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-general img {
+    border-radius: 10px;
+    margin: auto;
+}
+
+/* -------------- FOOTER ------------------------------- */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    background-color: #E2ECE9;
+    grid-area: footer;
+}
+
+.pie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mapa{
+    margin: 20px;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.nav-footer ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-footer ul li a{
+    border: none;
+}
+
+.iconos-redes{ 
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.iconos-redes p{
+    font-size: 2rem;
+}
+
+.agrupar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.agrupar i{
+    margin: 5px;
+    animation-name: expandir;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+}
+
+@keyframes expandir{
+    0%{
+        transform: scale(1)
+    }
+
+    50%{
+        transform: scale(1.1)
+    }
+
+    100%{
+        transform: scale(1)
+    }
+}
+
+.agrupar p{
+    margin: 5px;
+}
+
+.desarrollado-por {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/*-------------- MEDIA QUERIES -----------------------*/
+
+@media screen and (max-width:768px) {
+    .descripcion-general{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .bloque-imagenes{
+        flex-wrap: wrap;
+    }
+
+    .tarjeta{
+        width: 45%;
+    }
+
+    .bloque-imagenes a{
+        width: 45%;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "footer"
+        ;
+    }
+
+    aside{
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .descripcion-general{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .bloque-imagenes{
+        flex-wrap: wrap;
+    }
+
+    .tarjeta{
+        width: 90%;
+    }
+
+    .bloque-imagenes a{
+        width: 90%;
+    }
+
+    /* Nav */
+    nav{
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px;
+        text-align: center;
+    }
+    /* Main */
+    .texto-general{
+        width: 100%;
+    }
+
+    /* Footer */
+    .pie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "footer"
+        ;
+    }
+
+    aside{
+        display: none;
+    }
+
+}
