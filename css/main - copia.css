@@ -1,13 +1,13 @@
-/* *, *:before, *:after {
+*, *:before, *:after {
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-} */
+}
 
-/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;700;900&display=swap');
 
-/* html{
+html{
     font-size: 62.5%;
 }
 
@@ -18,11 +18,11 @@
     "main main main aside"
     "footer footer footer footer"
     ;
-} */
+}
 
 /* --------------- NAV ------------------------------ */
 
-/* nav{
+nav{
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -31,23 +31,23 @@
     background-color: white;
     border: solid 1px rgb(240, 239, 239);
     grid-area: nav;  
-} */
+}
 
-/* nav ul li {
+nav ul li {
     display: inline-block;
-} */
+}
 
 nav ul li:active{
     transform: scale(0.9);
 }
 
 nav ul li a{
-    /* text-decoration: none; */
+    text-decoration: none;
     text-align: center;
     font-family: 'EB Garamond', serif;
-    font-size: 1.5rem;
-    /* margin: 5px; */
-    /* padding: 0px; */
+    font-size: 2rem;
+    margin: 5px;
+    padding: 3px;
     color: black;
     border: solid 1px black;
     background-color: #E2ECE9;
@@ -58,14 +58,10 @@ nav ul li a:hover{
     color: #1d98b4;
 }
 
-.activa{
+.opcion-seleccionada{
     background-color: #BEE1E6;
 }
 
-/* .opcion-seleccionada{
-    background-color: #BEE1E6;
-}
- */
 /* ------------------ ASIDE -------------------------- */
 
 aside{
