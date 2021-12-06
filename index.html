@@ -67,22 +67,35 @@
 
       <!--------------------------------------------------------------------->
       <main>
-        <!------------- DESCRIPCION GENERAL------------------>
-        <section class="row row-cols-1 row-cols-lg-2">
-          <div class="col-lg-8 d-flex align-items-center text-center p-3">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quibusdam vitae libero, inventore corrupti voluptates fugiat
-              voluptas laborum quis labore ipsum hic eaque recusandae. Libero
-              excepturi et delectus voluptas, ipsum illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum praesentium repudiandae corrupti tenetur placeat quasi porro doloremque, ea repellendus iure? Tenetur eligendi ab libero fuga? Beatae impedit voluptatum aliquid nobis.
-            </p>
-          </div>
-          <div class="col-lg-4 text-center">
-            <img class="rounded-3" width="300" src="imagenes/todos_los_productos.jpg" alt="" />
-          </div>
-        </section>
+        
         <!------------- CARRUSEL ------------------>
 
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://dummyimage.com/300x100/000/fff" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://dummyimage.com/300x100/000/fff" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://dummyimage.com/300x100/000/fff" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <!------------- TITULO ------------------>
         <h1>Categorias:</h1>
@@ -90,34 +103,61 @@
         <!------------- ENLACES DE CATEGORIAS ------------------>
 
         <section class="mb-5">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-4 g-4">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Bases Acrílicas</h5>
-                      <p class="card-text">This is a short card.</p>
-                    </div>
-                  </div>
+                  
+                  <a href="paginas/productos.html" class="text-decoration-none text-black">
+                      <div class="card h-100">
+                        <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Bases Acrílicas</h5>
+                          <p class="card-text">This is a short card.</p>
+                        </div>
+                      </div>
+                  </a>
+                
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Lacas y Barnices</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                  </div>
+                  
+                  <a href="paginas/productos.html" class="text-decoration-none text-black">
+                      <div class="card h-100">
+                        <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Lacas y Barnices</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                  </a>
+                
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Pinturas a la Tiza</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
+                  
+                  <a href="paginas/productos.html" class="text-decoration-none text-black">
+                      <div class="card h-100">
+                        <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Pinturas a la Tiza</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                  </a>
+                
                 </div>
+
+                <div class="col">
+                  
+                    <a href="paginas/productos.html" class="text-decoration-none text-black">
+                        <div class="card h-100">
+                          <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Pinturas a la Tiza</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                        </div>
+                    </a>
+                  
+                  </div>
+
               </div>
         </section>
 
