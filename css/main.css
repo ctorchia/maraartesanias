@@ -30,6 +30,10 @@ nav ul li a:hover{
 
 /* ------------------ MAIN --------------------------- */
 
+main {
+    margin-top: 130px;
+}
+
 h1 {
     color: #398793;
     margin: 20px;
@@ -52,157 +56,9 @@ h1 {
     }
 }
 
-.imagen-principal{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.imagen-principal img{
-    border-radius: 10px;
-}
-
-.texto-principal {
-    width: 100%;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-.texto-principal p{
-    width: 50%;
-    margin: 10px 30px 30px 30px;
-}
-
-form {
-    font-size: 2rem;
-}
-
-main{
-    grid-area: main;
-}
-
-.bloque-imagenes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;   
-}
-
-.bloque-imagenes a{
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-    width: 30%;
-}
-
-.bloque-imagenes a .tarjeta{
-    width: 100%;
-}
-
-.tarjeta {
-    border: solid 2px rgb(239, 240, 240);
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;   /* */
-    transition: all .5s ease;
-}
-
-.tarjeta:hover{
+.card:hover{
     background-color: #E2ECE9;    
 }
-
-.tarjeta img{
-    border-radius: 10px;
-    margin: 10px;
-    width: 80%;   /**/
-}
-
-.tarjeta p {
-    margin: 15px;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.formulario-contacto{
-    display: flex;
-    justify-content: center;
-}
-
-.contactanos{
-    display: flex;
-    justify-content: center;
-}
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.formulario div{
-    display: block;
-    width: 100%;
-    margin: 10px;
-}
-
-.formulario div label{
-    width: 100%;
-}
-
-.formulario div input{
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-}
-
-.formulario div textarea{
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-}
-
-.contacto-botones input{
-    width: 20%    !important;
-}
-
-.contacto-botones input:active{
-    transform: scale(0.9);
-}
-
-/* .descripcion-general{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-}
-
-.texto-general{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;  
-}
-
-.texto-general p{
-    font-size: 1rem;
-    text-align: center;
-}
-
-.imagen-general{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.imagen-general img {
-    border-radius: 10px;
-    margin: auto;
-} */
 
 /* -------------- FOOTER ------------------------------- */
 
@@ -211,24 +67,14 @@ footer{
     margin-top: 20px;
 }
 
+.mapa{
+    margin: 10px;
+}
 
-
-.main-nav-footer ul li a{
+.nav-footer ul li a{
     border: none;
     text-decoration: none;
     color: black;
-}
-
-/*
-.iconos-redes{ 
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.iconos-redes p{
-    font-size: 2rem;
 }
 
 .agrupar{
@@ -236,7 +82,11 @@ footer{
     justify-content: center;
     align-items: center;
     margin: 5px;
-} */
+}
+
+.agrupar p{
+    margin: 0px 0px 0px 10px;
+}
 
 .agrupar i{
     margin: 5px;
@@ -258,12 +108,4 @@ footer{
     100%{
         transform: scale(1)
     }
-}
-
-/* .agrupar p{
-    margin: 5px;
-} */
-
-.desarrollado-por {
-    text-align: center;
 }

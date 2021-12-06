@@ -17,8 +17,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <!-------------------------------------------------------------------------------->
-      
+      <!--------------------------------------------------------------------->
       <header> 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
           <div class="container-fluid">
@@ -66,21 +65,20 @@
         </nav>
       </header>
 
-      <!-------------------------------------------------------------------------------->
+      <!--------------------------------------------------------------------->
       <main>
         <!------------- DESCRIPCION GENERAL------------------>
-        <section class="row descripcion-general">
-          <div class="col-8 texto-general d-flex align-items-center">
+        <section class="row row-cols-1 row-cols-lg-2">
+          <div class="col-lg-8 d-flex align-items-center text-center p-3">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Quibusdam vitae libero, inventore corrupti voluptates fugiat
               voluptas laborum quis labore ipsum hic eaque recusandae. Libero
-              excepturi et delectus voluptas, ipsum illum. Lorem ipsum dolor sit
-              amet.
+              excepturi et delectus voluptas, ipsum illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum praesentium repudiandae corrupti tenetur placeat quasi porro doloremque, ea repellendus iure? Tenetur eligendi ab libero fuga? Beatae impedit voluptatum aliquid nobis.
             </p>
           </div>
-          <div class=" col-4 imagen-general">
-            <img width="300" src="imagenes/todos_los_productos.jpg" alt="" />
+          <div class="col-lg-4 text-center">
+            <img class="rounded-3" width="300" src="imagenes/todos_los_productos.jpg" alt="" />
           </div>
         </section>
         <!------------- CARRUSEL ------------------>
@@ -90,47 +88,44 @@
         <h1>Categorias:</h1>
 
         <!------------- ENLACES DE CATEGORIAS ------------------>
-        <section class="bloque-imagenes">
-          <a href="paginas/productos.html">
-            <div class="tarjeta">
-              <img width="300" src="imagenes/base_200.jpg" alt="" />
-              <h2>Bases Acrílicas</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit sint optio aspernatur soluta labore, magni ab in
-                expedita voluptates corrupti.
-              </p>
-            </div>
-          </a>
-          <a href="paginas/productos.html">
-            <div class="tarjeta">
-              <img width="300" src="imagenes/base_200.jpg" alt="" />
-              <h2>Lacas y Barnices</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit sint optio aspernatur soluta labore, magni ab in
-                expedita voluptates corrupti.
-              </p>
-            </div>
-          </a>
-          <a href="paginas/productos.html">
-            <div class="tarjeta">
-              <img width="300" src="imagenes/base_200.jpg" alt="" />
-              <h2>Pinturas a la Tiza</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Suscipit sint optio aspernatur soluta labore, magni ab in
-                expedita voluptates corrupti.
-              </p>
-            </div>
-          </a>
-        </section>
-      </main>
-      <!-------- FOOTER ------------------------------------------------------------------------>
-      <footer>
-        <div class="row m-0 d-flex justify-content-between align-items-center container-fluid">
 
-          <div class="col-4">
+        <section class="mb-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bases Acrílicas</h5>
+                      <p class="card-text">This is a short card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lacas y Barnices</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="imagenes/base_200.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Pinturas a la Tiza</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+      <!--------FOOTER----------------------------------------------------->
+      <footer>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 d-flex align-items-center">
+
+          <div class="text-center">
             <!-- Ubicacion en Maps -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6011985204027!2d-58.54289943468906!3d-34.563651462886455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb768266fdead%3A0xc68fecbac802ae01!2zRXN0YWNpw7NuIFNhbiBBbmRyw6lzLCBMw61uZWEgTWl0cmU!5e0!3m2!1ses-419!2sar!4v1636039536721!5m2!1ses-419!2sar"
@@ -139,10 +134,11 @@
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
+              class="mapa"
             ></iframe>
           </div>
 
-          <nav class="main-nav-footer col-4 d-flex justify-content-center bg-transparent">
+          <nav class="nav-footer d-flex justify-content-center bg-transparent text-center">
             <ul class="list-unstyled">
               <li>
                 <a href="#">Inicio</a>
@@ -162,18 +158,18 @@
             </ul>
           </nav>
 
-          <div class="col-4 iconos-redes">
+          <div class="">
             <!-- Iconos de redes sociales -->
             <div class="agrupar">
-              <i class="fas fa-envelope fa-4x"></i>
+              <i class="fas fa-envelope fa-3x"></i>
               <p>mail@mail.com.ar</p>
             </div>
             <div class="agrupar">
-              <i class="fab fa-instagram fa-4x"></i>
+              <i class="fab fa-instagram fa-3x"></i>
               <p>@MaraArtesanias</p>
             </div>
             <div class="agrupar">
-              <i class="fab fa-whatsapp fa-4x"></i>
+              <i class="fab fa-whatsapp fa-3x"></i>
               <p>+5491122223333</p>
             </div>
           </div>
@@ -182,7 +178,7 @@
 
         <div class="row d-flex justify-content-center desarrollado-por">
           <!-- Desarrollado por: -->
-          <p>Developed by <a href="">CMT</a></p>
+          <p class="text-center">Developed by <a href="">CMT</a></p>
         </div>
       </footer>
     </div>
