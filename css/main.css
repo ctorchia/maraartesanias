@@ -1,54 +1,20 @@
-/* *, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-} */
 
-/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;700;900&display=swap'); */
-
-/* html{
-    font-size: 62.5%;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-areas: 
-    "nav nav nav nav"
-    "main main main aside"
-    "footer footer footer footer"
-    ;
-} */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;700;900&display=swap');
 
 /* --------------- NAV ------------------------------ */
 
-/* nav{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0px;
+nav{
     background-color: white;
     border: solid 1px rgb(240, 239, 239);
-    grid-area: nav;  
-} */
-
-/* nav ul li {
-    display: inline-block;
-} */
-
-nav ul li:active{
-    transform: scale(0.9);
 }
 
+/*  bg-light  preguntar prioridad*/
+
 nav ul li a{
-    /* text-decoration: none; */
     text-align: center;
     font-family: 'EB Garamond', serif;
     font-size: 1.5rem;
-    /* margin: 5px; */
-    /* padding: 0px; */
-    color: black;
+    /* color: black; */
     border: solid 1px black;
     background-color: #E2ECE9;
     border-radius: 5px;
@@ -60,20 +26,6 @@ nav ul li a:hover{
 
 .activa{
     background-color: #BEE1E6;
-}
-
-/* .opcion-seleccionada{
-    background-color: #BEE1E6;
-}
- */
-/* ------------------ ASIDE -------------------------- */
-
-aside{
-    grid-area: aside;
-}
-
-.costado .tarjeta{
-    width: 100%;
 }
 
 /* ------------------ MAIN --------------------------- */
@@ -112,7 +64,7 @@ h1 {
 
 .texto-principal {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
 }
@@ -221,7 +173,7 @@ main{
     transform: scale(0.9);
 }
 
-.descripcion-general{
+/* .descripcion-general{
     display: flex;
     flex-direction: row;
     margin: 10px;
@@ -237,7 +189,7 @@ main{
 }
 
 .texto-general p{
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -250,43 +202,24 @@ main{
 .imagen-general img {
     border-radius: 10px;
     margin: auto;
-}
+} */
 
 /* -------------- FOOTER ------------------------------- */
 
 footer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;    
     background-color: #E2ECE9;
-    grid-area: footer;
+    margin-top: 20px;
 }
 
-.pie{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.mapa{
-    margin: 20px;
-}
 
-.nav-footer{
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-}
-
-.nav-footer ul li{
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-footer ul li a{
+.main-nav-footer ul li a{
     border: none;
+    text-decoration: none;
+    color: black;
 }
 
+/*
 .iconos-redes{ 
     margin: 20px;
     display: flex;
@@ -303,7 +236,7 @@ footer{
     justify-content: center;
     align-items: center;
     margin: 5px;
-}
+} */
 
 .agrupar i{
     margin: 5px;
@@ -327,104 +260,10 @@ footer{
     }
 }
 
-.agrupar p{
+/* .agrupar p{
     margin: 5px;
-}
+} */
 
 .desarrollado-por {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-}
-
-/*-------------- MEDIA QUERIES -----------------------*/
-
-@media screen and (max-width:768px) {
-    .descripcion-general{
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-    }
-
-    .bloque-imagenes{
-        flex-wrap: wrap;
-    }
-
-    .tarjeta{
-        width: 45%;
-    }
-
-    .bloque-imagenes a{
-        width: 45%;
-    }
-
-    .grid-container{
-        display: grid;
-        grid-template-areas: 
-        "nav"
-        "main"
-        "footer"
-        ;
-    }
-
-    aside{
-        display: none;
-    }
-}
-
-@media screen and (max-width:375px) {
-    .descripcion-general{
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-    }
-
-    .bloque-imagenes{
-        flex-wrap: wrap;
-    }
-
-    .tarjeta{
-        width: 90%;
-    }
-
-    .bloque-imagenes a{
-        width: 90%;
-    }
-
-    /* Nav */
-    nav{
-        flex-direction: column;
-    }
-    
-    nav ul li {
-        display: block;
-        margin: 10px;
-        text-align: center;
-    }
-    /* Main */
-    .texto-general{
-        width: 100%;
-    }
-
-    /* Footer */
-    .pie{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .grid-container{
-        display: grid;
-        grid-template-areas: 
-        "nav"
-        "main"
-        "footer"
-        ;
-    }
-
-    aside{
-        display: none;
-    }
-
+    text-align: center;
 }
