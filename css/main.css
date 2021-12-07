@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;700;900&display=swap');
 
+body{
+    font-family: 'EB Garamond', serif;
+}
+
 /* --------------- NAV ------------------------------ */
 
 nav{
@@ -8,23 +12,23 @@ nav{
     border: solid 1px rgb(240, 239, 239);
 }
 
-/*  bg-light  preguntar prioridad*/
-
 nav ul li a{
     text-align: center;
-    font-family: 'EB Garamond', serif;
-    font-size: 1.5rem;
-    /* color: black; */
+    font-size: 1.3rem;
     border: solid 1px black;
     background-color: #E2ECE9;
     border-radius: 5px;
 }
 
-nav ul li a:hover{
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
     color: #1d98b4;
 }
 
-.activa{
+.active{
     background-color: #BEE1E6;
 }
 
@@ -39,7 +43,6 @@ h1 {
     margin: 20px;
     text-align: center;
     font-size: 3rem;
-    font-family: 'EB Garamond', serif;
 
     animation-name: entrada;
     animation-duration: 2s;
@@ -67,14 +70,14 @@ footer{
     margin-top: 20px;
 }
 
-.mapa{
-    margin: 10px;
-}
-
 .nav-footer ul li a{
     border: none;
     text-decoration: none;
     color: black;
+}
+
+nav ul li a:hover{
+    color: #1d98b4;
 }
 
 .agrupar{
@@ -100,11 +103,9 @@ footer{
     0%{
         transform: scale(1)
     }
-
     50%{
         transform: scale(1.1)
     }
-
     100%{
         transform: scale(1)
     }
