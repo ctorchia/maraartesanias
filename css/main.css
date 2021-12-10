@@ -118,3 +118,15 @@ nav ul li a:hover{
         transform: scale(1)
     }
 }
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .redes{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .agrupar{
+        display: block;
+        text-align: center;
+    }
+}
