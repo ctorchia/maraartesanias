@@ -1,0 +1,26 @@
+/* HEADER */
+
+nav{
+    background-color: white;
+    border: solid 1px rgb(240, 239, 239);
+
+    ul li a{
+        text-align: center;
+        font-size: 1.3rem;
+        border: solid 1px black;
+        background-color: #E2ECE9;
+        border-radius: 5px;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+
+    &:hover{
+        color: #1d98b4;
+    }
+}
+
+.active{
+    background-color: #BEE1E6;
+}
