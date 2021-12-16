@@ -1,18 +1,31 @@
 /* MAIN */
 
-main {
+main{
     margin-top: 130px;
-}
-
-h1 {
-    color: $titulo-color;
-    margin: 20px;
-    text-align: center;
-    font-size: 3rem;
-
-    animation-name: entrada;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
+    h1 {
+        color: $titulo-color;
+        margin: 20px;
+        text-align: center;
+        font-size: 3rem;
+    
+        animation-name: entrada;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    .grupo-tarjetas{
+        .card{
+            .card-body{
+                text-align: center;
+            
+                h5{
+                    color: $titulo-color;
+                }
+            }
+            &:hover{
+                background-color: $footer-bg-color;
+            }
+        }
+    }
 }
 
 @keyframes entrada {
@@ -23,16 +36,4 @@ h1 {
     100%{
         transform: translateX(0vw);
     }
-}
-
-.card-body{
-    text-align: center;
-
-    h5{
-        color: $titulo-color;
-    }
-}
-
-.card:hover{
-    background-color: $footer-bg-color;    
 }

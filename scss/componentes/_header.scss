@@ -1,26 +1,26 @@
 /* HEADER */
 
-nav{
-    background-color: white;
-    border: solid 1px rgb(240, 239, 239);
-
-    ul li a{
-        text-align: center;
-        font-size: 1.3rem;
-        border: $nav-borde;
-        background-color: $nav-bg-normal;
-        border-radius: 5px;
+header{
+    nav{
+        background-color: white;
+        border: solid 1px rgb(240, 239, 239);
+        ul{
+            li{
+                a{
+                    text-align: center;
+                    font-size: 1.3rem;
+                    border: $nav-borde;
+                    background-color: $nav-bg-normal;
+                    border-radius: 5px;
+                    color: black !important;
+                    &:hover{
+                        color: $hover-color !important;
+                    }
+                }
+                .active{
+                    background-color: $nav-bg-activo;
+                }
+            } 
+        }
     }
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
-
-    &:hover{
-        color: $hover-color;
-    }
-}
-
-.active{
-    background-color: $nav-bg-activo;
 }

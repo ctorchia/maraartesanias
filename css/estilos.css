@@ -3,36 +3,38 @@ body {
   font-family: "EB Garamond 500", serif; }
 
 /* HEADER */
-nav {
+header nav {
   background-color: white;
   border: solid 1px #f0efef; }
-  nav ul li a {
+  header nav ul li a {
     text-align: center;
     font-size: 1.3rem;
     border: solid 1px black;
     background-color: #E2ECE9;
-    border-radius: 5px; }
-
-.navbar-light .navbar-nav .nav-link {
-  color: black; }
-  .navbar-light .navbar-nav .nav-link:hover {
-    color: #1d98b4; }
-
-.active {
-  background-color: #BEE1E6; }
+    border-radius: 5px;
+    color: black !important; }
+    header nav ul li a:hover {
+      color: #1d98b4 !important; }
+  header nav ul li .active {
+    background-color: #BEE1E6; }
 
 /* MAIN */
 main {
   margin-top: 130px; }
-
-h1 {
-  color: #398793;
-  margin: 20px;
-  text-align: center;
-  font-size: 3rem;
-  animation-name: entrada;
-  animation-duration: 2s;
-  animation-iteration-count: 1; }
+  main h1 {
+    color: #398793;
+    margin: 20px;
+    text-align: center;
+    font-size: 3rem;
+    animation-name: entrada;
+    animation-duration: 2s;
+    animation-iteration-count: 1; }
+  main .grupo-tarjetas .card .card-body {
+    text-align: center; }
+    main .grupo-tarjetas .card .card-body h5 {
+      color: #398793; }
+  main .grupo-tarjetas .card:hover {
+    background-color: #E2ECE9; }
 
 @keyframes entrada {
   0% {
@@ -40,40 +42,30 @@ h1 {
   100% {
     transform: translateX(0vw); } }
 
-.card-body {
-  text-align: center; }
-  .card-body h5 {
-    color: #398793; }
-
-.card:hover {
-  background-color: #E2ECE9; }
-
 /* FOOTER */
 footer {
   background-color: #E2ECE9;
   margin-top: 20px; }
-
-.nav-footer ul li a {
-  border: none;
-  text-decoration: none;
-  color: black; }
-
-nav ul li a:hover {
-  color: #1d98b4; }
-
-.agrupar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px; }
-  .agrupar p {
-    margin: 0px 0px 0px 10px; }
-  .agrupar i {
-    margin: 5px;
-    animation-name: expandir;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-delay: .5s; }
+  footer .nav-footer ul li a {
+    border: none;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black; }
+    footer .nav-footer ul li a:hover {
+      color: #1d98b4; }
+  footer .redes .agrupar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; }
+    footer .redes .agrupar i {
+      margin: 5px;
+      animation-name: expandir;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-delay: .5s; }
+    footer .redes .agrupar p {
+      margin: 0px 0px 0px 10px; }
 
 @keyframes expandir {
   0% {
@@ -84,10 +76,10 @@ nav ul li a:hover {
     transform: scale(1); } }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .redes {
+  footer .redes {
     width: 100%;
     display: flex;
     justify-content: space-around; }
-  .agrupar {
-    display: block;
-    text-align: center; } }
+    footer .redes .agrupar {
+      display: block;
+      text-align: center; } }

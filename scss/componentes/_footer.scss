@@ -3,34 +3,38 @@
 footer{
     background-color:$footer-bg-color;
     margin-top: 20px;
-}
-
-.nav-footer ul li a{
-    border: none;
-    text-decoration: none;
-    color: black;
-}
-
-nav ul li a:hover{
-    color: $hover-color;
-}
-
-.agrupar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-
-    p{
-        margin: 0px 0px 0px 10px;
+    .nav-footer {
+        ul{
+            li{
+                a{
+                    border: none;
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                    color: black;
+                    &:hover{
+                        color: $hover-color;
+                    }
+                }
+            }
+        } 
     }
-
-    i{
-        margin: 5px;
-        animation-name: expandir;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-delay: .5s;
+    .redes {
+        .agrupar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            i{
+                margin: 5px;
+                animation-name: expandir;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-delay: .5s;
+            }
+            p{
+                margin: 0px 0px 0px 10px;
+            }
+        }
     }
 }
 
@@ -47,13 +51,15 @@ nav ul li a:hover{
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px){
-    .redes{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-    .agrupar{
-        display: block;
-        text-align: center;
+    footer{
+        .redes{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .agrupar{
+                display: block;
+                text-align: center;
+            }
+        }
     }
 }
