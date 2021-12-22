@@ -2,6 +2,11 @@
 body {
   font-family: "EB Garamond 500", serif; }
 
+.centrado-general, footer .nav-footer, footer .medios-contacto .agrupar {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /* HEADER */
 header nav {
   background-color: white;
@@ -28,7 +33,11 @@ main {
     font-size: 3rem;
     animation-name: entrada;
     animation-duration: 2s;
-    animation-iteration-count: 1; }
+    animation-iteration-count: 1;
+    animation-delay: 0s; }
+  main .grupo-tarjetas .row .col a {
+    text-decoration: none;
+    color: black; }
   main .grupo-tarjetas .card .card-body {
     text-align: center; }
     main .grupo-tarjetas .card .card-body h5 {
@@ -46,26 +55,34 @@ main {
 footer {
   background-color: #E2ECE9;
   margin-top: 20px; }
-  footer .nav-footer ul li a {
-    border: none;
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: black; }
-    footer .nav-footer ul li a:hover {
-      color: #1d98b4; }
-  footer .redes .agrupar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  footer .nav-footer {
+    text-align: center; }
+    footer .nav-footer ul li a {
+      border: none;
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: black; }
+      footer .nav-footer ul li a:hover {
+        color: #1d98b4; }
+  footer .medios-contacto .agrupar {
     margin: 5px; }
-    footer .redes .agrupar i {
+    footer .medios-contacto .agrupar i {
       margin: 5px;
       animation-name: expandir;
       animation-duration: 2s;
       animation-iteration-count: infinite;
-      animation-delay: .5s; }
-    footer .redes .agrupar p {
+      animation-delay: 0.5s; }
+    footer .medios-contacto .agrupar p {
       margin: 0px 0px 0px 10px; }
+
+.medio-correo {
+  color: rgba(0, 0, 255, 0.726); }
+
+.medio-instagram {
+  color: #ca1ba4; }
+
+.medio-whatsapp {
+  color: green; }
 
 @keyframes expandir {
   0% {
@@ -76,10 +93,10 @@ footer {
     transform: scale(1); } }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  footer .redes {
+  footer .medios-contacto {
     width: 100%;
     display: flex;
     justify-content: space-around; }
-    footer .redes .agrupar {
+    footer .medios-contacto .agrupar {
       display: block;
       text-align: center; } }

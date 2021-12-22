@@ -7,12 +7,17 @@ main{
         margin: 20px;
         text-align: center;
         font-size: 3rem;
-    
-        animation-name: entrada;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
+        @include animacion(entrada, 2s, 1, 0s);
     }
     .grupo-tarjetas{
+        .row {
+            .col{
+                a{
+                    text-decoration: none;
+                    color: $main-link-color 
+                }    
+            }
+        }
         .card{
             .card-body{
                 text-align: center;
