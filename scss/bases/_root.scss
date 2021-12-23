@@ -1,3 +1,18 @@
 body{
     font-family: $fuente-general;
 }
+
+// Mixins //
+@mixin animacion($nombre, $tiempo, $cantidad, $demora){
+    animation-name: $nombre;
+    animation-duration: $tiempo;
+    animation-iteration-count: $cantidad;
+    animation-delay: $demora;
+}
+
+// Extend //
+.centrado-general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -64,6 +64,8 @@ footer {
       color: black; }
       footer .nav-footer ul li a:hover {
         color: #1d98b4; }
+      footer .nav-footer ul li a h6 {
+        font-size: 1.3rem; }
   footer .medios-contacto .agrupar {
     margin: 5px; }
     footer .medios-contacto .agrupar i {

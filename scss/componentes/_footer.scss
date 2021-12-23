@@ -4,6 +4,8 @@ footer{
     background-color:$footer-bg-color;
     margin-top: 20px;
     .nav-footer {
+        @extend .centrado-general;
+        text-align: center;
         ul{
             li{
                 a{
@@ -14,27 +16,38 @@ footer{
                     &:hover{
                         color: $hover-color;
                     }
+                    h6{
+                        font-size:1.3rem;
+                    }
                 }
             }
         } 
     }
-    .redes {
+    .medios-contacto {
         .agrupar{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend .centrado-general;
             margin: 5px;
             i{
                 margin: 5px;
-                animation-name: expandir;
-                animation-duration: 2s;
-                animation-iteration-count: infinite;
-                animation-delay: .5s;
+                @include animacion(expandir, 2s, infinite, .5s);
             }
             p{
                 margin: 0px 0px 0px 10px;
             }
         }
+    }
+}
+
+//Mapas
+$medios-contacto: (
+    correo: $color-medio-correo,
+    instagram: $color-medio-instagram,
+    whatsapp: $color-medio-whatsapp,
+);
+
+@each $medio,$color in $medios-contacto {
+    .medio-#{$medio}{
+        color: $color;
     }
 }
 
@@ -52,7 +65,7 @@ footer{
 
 @media screen and (min-width: 576px) and (max-width: 992px){
     footer{
-        .redes{
+        .medios-contacto{
             width: 100%;
             display: flex;
             justify-content: space-around;
