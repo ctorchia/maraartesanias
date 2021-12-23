@@ -30,6 +30,80 @@ main{
                 background-color: $footer-bg-color;
             }
         }
+        .card-producto{
+            .card-body{
+                .boton-producto{
+                    text-align: center;
+                    font-size: 1.3rem;
+                    border: $nav-borde;
+                    background-color: $nav-bg-activo;
+                    border-radius: 5px;
+                    color: black !important;
+                    padding: 0.3rem;
+                }
+            }
+            .lista-colores{
+                background-color:white;
+
+                .grupo-color{
+                    background-color:white;
+                    width:120px;
+                    
+                    .item-color-210{
+                        @extend .item-color;
+                        background-color:#ffffff; 
+                    }
+                    .item-color-308{
+                        @extend .item-color;
+                        background-color:#ffdf3c;
+                    }
+                    .item-color-716{
+                        @extend .item-color;
+                        background-color:#f49fb2;
+                    }
+                    .item-color-700{
+                        @extend .item-color;
+                        background-color:#d81a34;
+                    }
+                    .item-color-600{
+                        @extend .item-color;
+                        background-color:#f26122;
+                    }
+                    .item-color-912{
+                        @extend .item-color;
+                        background-color:#0cac4a;
+                    }
+                    .item-color-900{
+                        @extend .item-color;
+                        background-color:#b4d433;
+                    }
+                    .item-color-400{
+                        @extend .item-color;
+                        background-color:#007db3;
+                    }.item-color-510{
+                        @extend .item-color;
+                        background-color:#5b176a;
+                    }
+                    .item-color-513{
+                        @extend .item-color;
+                        background-color:#decfe4;
+                    }
+                    .item-color-807{
+                        @extend .item-color;
+                        background-color:#7a563e;
+                    }
+                    .item-color-100{
+                        @extend .item-color;
+                        background-color:#000000;
+                    }
+                    h4{
+                        color: black;
+                        font-size: 1rem;
+                        text-align: center;
+                    }   
+                }
+            }
+        }
     }
 }
 
