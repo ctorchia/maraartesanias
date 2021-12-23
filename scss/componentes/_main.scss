@@ -42,3 +42,15 @@ main{
         transform: translateX(0vw);
     }
 }
+
+@media screen and (max-width: 576px){
+    main{
+        .carousel{
+            .slide{
+                img{
+                    height:20vh;
+                }
+            }
+        }
+    }
+}
