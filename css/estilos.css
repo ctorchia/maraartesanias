@@ -126,15 +126,12 @@ footer {
       animation-delay: 0.5s; }
     footer .medios-contacto .agrupar p {
       margin: 0px 0px 0px 10px; }
-
-.medio-correo {
-  color: rgba(0, 0, 255, 0.726); }
-
-.medio-instagram {
-  color: #ca1ba4; }
-
-.medio-whatsapp {
-  color: green; }
+    footer .medios-contacto .agrupar .medio-correo {
+      color: rgba(0, 0, 255, 0.726); }
+    footer .medios-contacto .agrupar .medio-instagram {
+      color: #ca1ba4; }
+    footer .medios-contacto .agrupar .medio-whatsapp {
+      color: green; }
 
 @keyframes expandir {
   0% {

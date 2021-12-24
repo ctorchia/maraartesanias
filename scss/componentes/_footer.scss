@@ -1,78 +1,77 @@
 /* FOOTER */
 
-footer{
-    background-color:$footer-bg-color;
-    margin-top: 20px;
-    .nav-footer {
-        @extend .centrado-general;
-        text-align: center;
-        ul{
-            li{
-                a{
-                    border: none;
-                    text-decoration: none;
-                    font-size: 1.3rem;
-                    color: black;
-                    &:hover{
-                        color: $hover-color;
-                    }
-                    h6{
-                        font-size:1.3rem;
-                    }
-                }
-            }
-        } 
-    }
-    .medios-contacto {
-        .agrupar{
-            @extend .centrado-general;
-            margin: 5px;
-            i{
-                margin: 5px;
-                @include animacion(expandir, 2s, infinite, .5s);
-            }
-            p{
-                margin: 0px 0px 0px 10px;
-            }
+footer {
+  background-color: $footer-bg-color;
+  margin-top: 20px;
+  .nav-footer {
+    @extend .centrado-general;
+    text-align: center;
+    ul {
+      li {
+        a {
+          border: none;
+          text-decoration: none;
+          font-size: 1.3rem;
+          color: black;
+          &:hover {
+            color: $hover-color;
+          }
+          h6 {
+            font-size: 1.3rem;
+          }
         }
+      }
     }
+  }
+  .medios-contacto {
+    .agrupar {
+      @extend .centrado-general;
+      margin: 5px;
+      i {
+        margin: 5px;
+        @include animacion(expandir, 2s, infinite, 0.5s);
+      }
+      p {
+        margin: 0px 0px 0px 10px;
+      }
+      $medios-contacto: (
+        correo: $color-medio-correo,
+        instagram: $color-medio-instagram,
+        whatsapp: $color-medio-whatsapp,
+      );
+      @each $medio, $color in $medios-contacto {
+        .medio-#{$medio} {
+          color: $color;
+        }
+      }
+    }
+  }
 }
 
 //Mapas
-$medios-contacto: (
-    correo: $color-medio-correo,
-    instagram: $color-medio-instagram,
-    whatsapp: $color-medio-whatsapp,
-);
 
-@each $medio,$color in $medios-contacto {
-    .medio-#{$medio}{
-        color: $color;
-    }
+@keyframes expandir {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-@keyframes expandir{
-    0%{
-        transform: scale(1)
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  footer {
+    .medios-contacto {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .agrupar {
+        display: block;
+        text-align: center;
+      }
     }
-    50%{
-        transform: scale(1.1)
-    }
-    100%{
-        transform: scale(1)
-    }
-}
-
-@media screen and (min-width: 576px) and (max-width: 992px){
-    footer{
-        .medios-contacto{
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            .agrupar{
-                display: block;
-                text-align: center;
-            }
-        }
-    }
+  }
 }
