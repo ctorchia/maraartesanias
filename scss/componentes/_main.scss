@@ -48,54 +48,96 @@ main{
                 .grupo-color{
                     background-color:white;
                     width:120px;
+
+                    $codigos-colores: (
+                        010:$plateado-010,
+                        030:$cobre-030,
+                        040:$dorado-040,
+                        045:$oro-rico-045,
+                        050:$blanco-perlado-050,
+                        100:$negro-100,
+                        102:$negro-marfil-102,
+                        111:$gris-perla-111,
+                        210:$blanco-210,
+                        213:$blanco-antiguo-213,
+                        214:$manteca-214,
+                        216:$piel-216,
+                        300:$amarillo-cadmio-300,
+                        302:$amarillo-napoles-302,
+                        303:$amarillo-limon-303,
+                        306:$oro-306,
+                        307:$amarillo-pastel-307,
+                        308:$amarillo-308,
+                        308b:$amarillo-oro-308b,
+                        311:$amarillo-suave-311,
+                        315:$amarillo-fluo-315,
+                        400:$azul-400,
+                        401:$azul-oscuro-401,
+                        402:$azul-ceruleo-402,
+                        404:$azul-cobalto-404,
+                        406:$azul-ultramar-406,
+                        407:$azul-talo-407,
+                        408:$azul-cyan-408,
+                        409:$azul-pastel-409,
+                        412:$cielo-412,
+                        414:$turquesa-414,
+                        416:$celeste-brisa-416,
+                        417:$celeste-bandera-417,
+                        418:$celeste-418,
+                        500:$magenta-500,
+                        501:$magenta-primario-501,
+                        502:$carmin-502,
+                        502b:$rosa-purpura-502b,
+                        504:$bordo-504,
+                        510:$violeta-510,
+                        511:$violeta-pastel,
+                        512:$jacaranda-512,
+                        513:$lila-513,
+                        600:$naranja-600,
+                        601:$naranja-oriental-601,
+                        700:$rojo-700,
+                        701:$rojo-cadmio-701,
+                        702:$rojo-tulipan-702,
+                        703:$rojo-carmesi-703,
+                        705:$rojo-bermellon-705,
+                        706:$oxido-706,
+                        708:$rojo-navidad-708,
+                        709:$rosa-victoria-709,
+                        710:$rosado-710,
+                        712:$fucsia-712,
+                        715:$rosa-princesa-715,
+                        716:$rosa-romantico-716,
+                        717:$rosa-country-717,
+                        718:$fucsia-fluo-718,
+                        719:$rosa-chicle-719,
+                        802:$tierra-siena-nat-802,
+                        803:$tierra-siena-tost-803,
+                        804:$tierra-sombra-nat-804,
+                        805:$tierra-sombra-tost-805,
+                        807:$chocolate-807,
+                        810:$marron-810,
+                        812:$ocre-812,
+                        812b:$ocre-ferroso-812b,
+                        900:$lima-900,
+                        901:$hierba-901,
+                        907:$verde-cromo-907,
+                        910:$verde-manzana-910,
+                        911:$verde-lima-911,
+                        912:$pino-912,
+                        912b:$verde-palta-912b,
+                        913:$verde-talo-913,
+                        914:$verde-venecia-914,
+                        915:$verde-pastel-915,
+                        916:$verde-eq-916,
+                        924:$verde-calma-924,
+                    );
+                    @each $codigo, $color in $codigos-colores{
+                        .item-color-#{$codigo}{
+                            @extend .item-color;
+                            background-color: $color;
+                        }
+                    }
                     
-                    .item-color-210{
-                        @extend .item-color;
-                        background-color:#ffffff; 
-                    }
-                    .item-color-308{
-                        @extend .item-color;
-                        background-color:#ffdf3c;
-                    }
-                    .item-color-716{
-                        @extend .item-color;
-                        background-color:#f49fb2;
-                    }
-                    .item-color-700{
-                        @extend .item-color;
-                        background-color:#d81a34;
-                    }
-                    .item-color-600{
-                        @extend .item-color;
-                        background-color:#f26122;
-                    }
-                    .item-color-912{
-                        @extend .item-color;
-                        background-color:#0cac4a;
-                    }
-                    .item-color-900{
-                        @extend .item-color;
-                        background-color:#b4d433;
-                    }
-                    .item-color-400{
-                        @extend .item-color;
-                        background-color:#007db3;
-                    }.item-color-510{
-                        @extend .item-color;
-                        background-color:#5b176a;
-                    }
-                    .item-color-513{
-                        @extend .item-color;
-                        background-color:#decfe4;
-                    }
-                    .item-color-807{
-                        @extend .item-color;
-                        background-color:#7a563e;
-                    }
-                    .item-color-100{
-                        @extend .item-color;
-                        background-color:#000000;
-                    }
                     h4{
                         color: black;
                         font-size: 1rem;
@@ -106,6 +148,8 @@ main{
         }
     }
 }
+
+
 
 @keyframes entrada {
     0%{
