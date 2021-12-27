@@ -49,6 +49,7 @@ main{
                     background-color:white;
                     width:120px;
 
+                    // MAPA para colores de productos
                     $codigos-colores: (
                         10:$plateado-010,
                         30:$cobre-030,
@@ -173,8 +174,6 @@ main{
         }
     }
 }
-
-
 
 @keyframes entrada {
     0%{

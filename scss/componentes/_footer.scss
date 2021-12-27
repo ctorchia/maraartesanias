@@ -34,6 +34,7 @@ footer {
       p {
         margin: 0px 0px 0px 10px;
       }
+      //MAPA para Medios de Contacto
       $medios-contacto: (
         correo: $color-medio-correo,
         instagram: $color-medio-instagram,
@@ -47,8 +48,6 @@ footer {
     }
   }
 }
-
-//Mapas
 
 @keyframes expandir {
   0% {
