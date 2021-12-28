@@ -49,6 +49,7 @@ footer {
   }
 }
 
+//Animacion Iconos Medios de Contacto
 @keyframes expandir {
   0% {
     transform: scale(1);
@@ -61,6 +62,7 @@ footer {
   }
 }
 
+//MQ Iconos Medio de Contacto en forma horizontal
 @media screen and (min-width: 576px) and (max-width: 992px) {
   footer {
     .medios-contacto {

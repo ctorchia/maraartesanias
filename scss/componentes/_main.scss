@@ -175,6 +175,7 @@ main{
     }
 }
 
+//Animacion ingreso de Titulos
 @keyframes entrada {
     0%{
         transform: translateX(-100vw);
@@ -185,6 +186,7 @@ main{
     }
 }
 
+//MQ para Imagenes Carousel en Mobile
 @media screen and (max-width: 576px){
     main{
         .carousel{
