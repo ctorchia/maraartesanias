@@ -46,7 +46,8 @@ main {
   main .grupo-tarjetas .card .card-body {
     text-align: center; }
     main .grupo-tarjetas .card .card-body h5 {
-      color: #398793; }
+      color: #398793;
+      font-weight: bold; }
   main .grupo-tarjetas .card:hover {
     background-color: #E2ECE9; }
   main .grupo-tarjetas .card-producto .card-body .boton-producto {
