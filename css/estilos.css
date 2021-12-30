@@ -273,9 +273,9 @@ main {
         background-color: #a6dc6e; }
       main .grupo-tarjetas .card-producto .lista-colores .grupo-color .item-color-931 {
         background-color: #277f7b; }
-      main .grupo-tarjetas .card-producto .lista-colores .grupo-color h4 {
-        color: black;
-        font-size: 1rem;
+      main .grupo-tarjetas .card-producto .lista-colores .grupo-color p {
+        line-height: 1;
+        margin: 3px 0px 8px 0px;
         text-align: center; }
 
 @keyframes entrada {
