@@ -30,7 +30,7 @@ header nav {
 
 /* MAIN */
 main {
-  margin-top: 130px; }
+  margin-top: 140px; }
   main h1 {
     color: #398793;
     margin: 20px;
@@ -52,7 +52,7 @@ main {
     background-color: #E2ECE9; }
   main .grupo-tarjetas .card-producto .card-body .boton-producto {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border: solid 1px black;
     background-color: #BEE1E6;
     border-radius: 5px;
