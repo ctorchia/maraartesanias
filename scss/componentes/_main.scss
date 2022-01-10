@@ -29,6 +29,7 @@ main{
             }
             &:hover{
                 background-color: $footer-bg-color;
+                transform: scale(1.005);
             }
         }
         .card-producto{
@@ -174,6 +175,9 @@ main{
             }
         }
     }
+    #nosotros{
+        @include animacion(expandir, 2s, 1, 0s);
+    }
 }
 
 //Animacion ingreso de Titulos
@@ -185,6 +189,19 @@ main{
     100%{
         transform: translateX(0vw);
     }
+}
+
+// Animacion para Expandir
+@keyframes expandir {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 //MQ para Imagenes Carousel en Mobile
@@ -199,22 +216,3 @@ main{
         }
     }
 }
-
-
-// @media (min-width: 768px) {
-    
-//     .carousel-inner .carousel-item-end.active,
-//     .carousel-inner .carousel-item-next {
-//       transform: translateX(25%);
-//     }
-    
-//     .carousel-inner .carousel-item-start.active, 
-//     .carousel-inner .carousel-item-prev {
-//       transform: translateX(-25%);
-//     }
-// }
-
-// .carousel-inner .carousel-item-end,
-// .carousel-inner .carousel-item-start { 
-//   transform: translateX(0);
-// }
