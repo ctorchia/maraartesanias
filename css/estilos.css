@@ -51,6 +51,8 @@ main {
   main .grupo-tarjetas .card:hover {
     background-color: #E2ECE9;
     transform: scale(1.005); }
+  main .grupo-tarjetas .card-producto .card-imagen {
+    text-align: center; }
   main .grupo-tarjetas .card-producto .card-body .boton-producto {
     text-align: center;
     font-size: 1.1rem;
@@ -297,10 +299,6 @@ main {
     transform: scale(0.95); }
   100% {
     transform: scale(1); } }
-
-@media screen and (max-width: 576px) {
-  main .carousel .slide img {
-    height: 20vh; } }
 
 /* FOOTER */
 footer {

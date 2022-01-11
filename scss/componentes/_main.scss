@@ -33,6 +33,9 @@ main{
             }
         }
         .card-producto{
+            .card-imagen{
+                text-align:center;
+            }
             .card-body{
                 .boton-producto{
                     text-align: center;
@@ -202,17 +205,4 @@ main{
   100% {
     transform: scale(1);
   }
-}
-
-//MQ para Imagenes Carousel en Mobile
-@media screen and (max-width: 576px){
-    main{
-        .carousel{
-            .slide{
-                img{
-                    height:20vh;
-                }
-            }
-        }
-    }
 }
