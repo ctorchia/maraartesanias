@@ -361,6 +361,11 @@ main {
   100% {
     transform: scale(1); } }
 
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition-property: height, visibility;
+    transition-duration: 0.8s; } }
+
 /* FOOTER */
 footer {
   background-color: #E2ECE9;
